@@ -1,0 +1,75 @@
+<!DOCTYPE>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Assets/style.css">
+</head>
+
+<body>
+
+<h1 class="rules">The Rules</h1>
+<p class="rules">There are 6 questions, you have 30 seconds to answer all 6 questions.</p>
+<h2>
+<button onclick="setTimeout(myTimer, 30000);">Start Button</button>
+</h2>
+
+<form id = "quiz" name = "quiz">
+
+<p>1. The Southern Ocean Surrounds Which Continent?</p>
+  <input type="radio" id = "mc" name="question1" value="Antarctica"> Antarctica<br>
+  <input type="radio" id = "mc" name="question1" value="Africa"> Africa<br>
+  <input type="radio" id = "mc" name="question1" value="Europe"> Europe<br>
+  <input type="radio" id = "mc" name="question1" value="South America"> South America
+
+
+
+<p>2. What does HTTP stand for?</p> 
+  <input type="radio" name="question2" value="Hypertext Text Protocol System" > Hypertext Text Protocol System<br>
+  <input type="radio" name="question2" value="Hypertext Transfer Protocol Secure"> Hypertext Transfer Protocol Secure<br>
+  <input type="radio" name="question2" value="Hypertext Transmission Permission System"> Hypertext Transmission Permission System<br>
+  <input type="radio" name="question2" value="Hypertext Transmission Protocol Secure"> Hypertext Transmission Protocol Secure
+
+
+
+<p>3. Which president was known as the great communicator?</p>
+  <input type="radio" name="question3" value="Ronald Reagan"> Ronald Reagan<br>
+  <input type="radio" name="question3" value="Richard Nixon"> Richard Nixon<br>
+  <input type="radio" name="question3" value="George Bush"> George Bush<br>
+  <input type="radio" name="question3" value="Barack Obama"> Barack Obama
+
+
+
+<p>4. Which vitamin is produced when skin is exposed to the sun</p>
+  <input type="radio" name="question4" value="Vitamin A"> Vitamin A<br>
+  <input type="radio" name="question4" value="Vitamin B"> Vitamin B<br>
+  <input type="radio" name="question4" value="Vitamin C"> Vitamin C<br>
+  <input type="radio" name="question4" value="Vitamin D"> Vitamin D
+
+
+
+<p>5. Which year was the first Apple released?</p>
+  <input type="radio" name="question5" value="1976"> 1976<br>
+  <input type="radio" name="question5" value="1965"> 1965<br>
+  <input type="radio" name="question5" value="1976"> 1976<br>
+  <input type="radio" name="question5" value="1980"> 1980
+
+
+
+<p>6. Which dog is the most popular in America?</p>
+  <input type="radio" name="question6" value="Boxer"> Boxer<br>
+  <input type="radio" name="question6" value="German Shepherd"> German Shepherd<br>
+  <input type="radio" name="question6" value="Labrador Retriever"> Labrador Retriever<br>
+  <input type="radio" name="question6" value="Pomeranian"> Pomeranian<br>
+
+
+<input id = "button" type="button" value="Finished" onclick="check();">
+</form>
+
+<div id = "after_submit">
+<p id= "number_correct"></p>
+</div>
+
+
+
+<script src="Assets/Javascript/app.js"></script>
+</body>
+</html>
